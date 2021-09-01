@@ -6,6 +6,7 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import { Contact } from '../../components/Contact/Contact';
 import { Information } from '../../components/Information/Information';
+import NavBar from '../../components/NavBar/NavBar';
 
 function Copyright() {
   return (
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function LandingPage() {
+export default function Footer() {
   const classes = useStyles();
 
   return (

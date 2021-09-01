@@ -1,29 +1,41 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
+import styles from "./Navbar.module.css";
 export default function NavBar() {
   return (
-    <nav class="navbar navbar-light bg-light">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <Link to ='/home' class="nav-link">
-            Active
-          </Link>
-        </li>
-        <li class="nav-item">
-          <Link to ='/home' class="nav-link" >
-            Link
-          </Link>
-        </li>
-        <li class="nav-item">
-          <Link to ='/home' class="nav-link" >
-            Link
-          </Link>
-        </li>
-        <li class="nav-item">
-          <Link to ='/home' class="nav-link">
-            Disabled
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <div className={styles.container}>
+      <nav className={`navbar navbar-expand-lg navbar-light ${styles.navbar}`}>
+        <div>
+    
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <Link to='/home' className={`nav-link ${styles.link}`}>
+                Sobre Mi
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className={`nav-link ${styles.link}`}>
+                Proyectos
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link className={`nav-link ${styles.link}`}>
+                Descargar CV
+              </Link>
+            </li>
+            <li class="nav-item">
+            <Link className={`nav-link ${styles.link}`}>
+                Contacto
+              </Link>
+            </li>
+            <li>
+              <Link to ='/' className={`nav-link ${styles.link}`}>
+                Salir
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 }

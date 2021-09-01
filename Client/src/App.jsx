@@ -1,18 +1,21 @@
-import './App.css';
-import Home from './pages/home/Home'
-import {Switch, Route} from 'react-router-dom'
-import LandingPage from './pages/landing/Landing'
-import Navbar from './components/NavBar/NavBar';
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import LandingPage from "./pages/landing/Landing";
+import Navbar from "./components/NavBar/NavBar";
+import About from "./pages/About/About";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Route path="/home" component={Navbar}/>
       <Switch>
-        <Route path="/" exact component={LandingPage}/>
-        <Route path="/home" exact component={Home} />
+        <Route exact  path="/" component={LandingPage} />
+        <Route path="/">
+          <Route path = "/" component={Navbar} />
+          <Route exact path="/home"  component={About} />
+          <Route path = "/" component={Footer} />
+        </Route>
       </Switch>
-     
     </div>
   );
 }

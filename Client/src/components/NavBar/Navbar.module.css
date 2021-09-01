@@ -1,0 +1,15 @@
+.navbar{
+    display: inline-block;
+    list-style-type: none;
+}
+.container{
+    background-color: #eeeeee
+}
+.link{
+    font-size: 1.2rem
+}
+
+.link:hover{
+   font-size: 1.3rem;
+}
+
