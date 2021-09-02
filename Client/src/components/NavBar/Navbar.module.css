@@ -6,10 +6,11 @@
     background-color: #eeeeee
 }
 .link{
-    font-size: 1.2rem
+    font-size: 1.2rem;
 }
 
+
 .link:hover{
-   font-size: 1.3rem;
+   background-color: rgb(209, 209, 209)
 }
 

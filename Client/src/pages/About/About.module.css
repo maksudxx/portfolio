@@ -1,13 +1,25 @@
-.parrafo{
-    color: white;
-    width: 80%;
-    margin-top: 70px;
+.parrafo {
+  width: 80%;
 }
 
-.container{
-    align-items: center;
+.container {
+  align-items: center;
 }
 
-.link{
-    text-decoration: none;
+.link {
+  text-decoration: none;
+}
+
+.imagesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.image {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }

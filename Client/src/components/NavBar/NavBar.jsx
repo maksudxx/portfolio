@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import CV from '../../img/cv.jpg'
+
+
 export default function NavBar() {
   return (
     <div className={styles.container}>
@@ -14,19 +17,19 @@ export default function NavBar() {
               </Link>
             </li>
             <li class="nav-item">
-              <Link className={`nav-link ${styles.link}`}>
+              <Link to="/proyects" className={`nav-link ${styles.link}`}>
                 Proyectos
               </Link>
             </li>
             <li class="nav-item">
-              <Link className={`nav-link ${styles.link}`}>
-                Descargar CV
+            <Link to='/contact' className={`nav-link ${styles.link}`}>
+                Contacto
               </Link>
             </li>
             <li class="nav-item">
-            <Link className={`nav-link ${styles.link}`}>
-                Contacto
-              </Link>
+              <a href={CV}  download={CV} className={`nav-link ${styles.link}`}>
+                Descargar CV
+              </a>
             </li>
             <li>
               <Link to ='/' className={`nav-link ${styles.link}`}>

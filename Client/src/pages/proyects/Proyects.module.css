@@ -1,0 +1,27 @@
+.proyectsGrid{
+    display: grid;
+    /* autorellena todo y le agrega un ancho de 230px a las cards */
+    grid-template-columns: repeat(auto-fill, 400px);  
+    /* gap le da una separacion */
+    gap: 40px; 
+    padding: 40px;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.proyect{
+    list-style: none;
+    border: 1px solid;
+    border-radius: 8px;
+    opacity: 0.75;
+}
+.proyect:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.titleCard{
+    margin-top: 5px
+}

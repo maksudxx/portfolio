@@ -1,12 +1,10 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import { Contact } from '../../components/Contact/Contact';
-import { Information } from '../../components/Information/Information';
-import NavBar from '../../components/NavBar/NavBar';
+
 
 function Copyright() {
   return (
