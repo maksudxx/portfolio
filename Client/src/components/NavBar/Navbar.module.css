@@ -1,12 +1,19 @@
 .navbar{
     display: inline-block;
     list-style-type: none;
+    padding:0;
+    height: 50px
 }
 .container{
-    background-color: #eeeeee
+    background-color: #696969;
+    border-bottom: 2px solid 
+
 }
 .link{
     font-size: 1.2rem;
+    height:80px;
+    margin-left: 20px;
+     
 }
 
 

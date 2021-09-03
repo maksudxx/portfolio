@@ -5,7 +5,8 @@ import {
 } from '@mui-treasury/components/socialLink';
 import { useRoundSocialLinkStyles } from '@mui-treasury/styles/socialLink/round';
 
-export  const Contact = React.memo(function RoundSocialLink() {
+
+export  const Networks = React.memo(function RoundSocialLink() {
   return (
     <>
       <SocialProvider useStyles={useRoundSocialLinkStyles}>
@@ -24,6 +25,12 @@ export  const Contact = React.memo(function RoundSocialLink() {
         <SocialLink
           brand={'GithubCircle'}
           href={'https://github.com/maksudxx'}
+        />
+        <SocialLink
+          brand="Whatsapp"
+          href={'https://wa.me/3888603670/?text=Hola Facundo.!'}
+          target="_blank"
+          
         />
       </SocialProvider>
     </>

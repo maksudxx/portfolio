@@ -1,9 +1,10 @@
 import PSITESIS from "../../img/proyects/psitesis.png";
+import COUNTRIES from "../../img/proyects/countries.png"
 import styles from './Proyects.module.css'
 export default function Proyects() {
   return (
     <div>
-      <br />
+      <br /> <br /> 
       <h2><u>PROYECTOS</u></h2>
       <ul className={styles.proyectsGrid}>
         <li className={styles.proyect}>
@@ -28,11 +29,11 @@ export default function Proyects() {
         </li>
         <li className={styles.proyect}>
         <h5 className={styles.titleCard}><u>PI Countries</u></h5>
-          <img src={PSITESIS} alt="psitesis" width={300} />
+          <img src={COUNTRIES} alt="countries" width={300} />
           <p>
             Link deploy:{" "}
             <a href="https://psitesis.netlify.app/" target="_blank" without rel="noreferrer" className={styles.link}>
-              psitesis.netlify.app
+              -
             </a>
           </p>
           <p>

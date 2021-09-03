@@ -13,14 +13,15 @@ import SQLSERVER from '../../img/soft/sqlserver.png'
 import POSTMAN from '../../img/soft/postman.jpg'
 import NPM from '../../img/soft/npm.png'
 import GITHUB from '../../img/soft/github.png'
+import MATERIAL from '../../img/soft/material.png'
 
 
 export default function About() {
   return (
     <div align="center">
-      <br />
+      <br /> <br /> 
       <div className={styles.parrafo}>
-        <h3><u>SOBRE MI</u></h3>
+        <h2><u>SOBRE MI</u></h2>
         <br />
         <p>
           Hola me llamo Facundo y soy un apasionado por el mundo IT, me gusta
@@ -61,6 +62,7 @@ export default function About() {
       <br />
       <div>
         <h3><u>Tecnologias y Herramientas</u></h3>
+        <br />
           <div className={styles.imagesGrid}>
               <div>
                 <img src={HTML} alt="html" width={100} className={styles.image}/>
@@ -81,6 +83,10 @@ export default function About() {
               <div>
                 <img src={REACT} alt="react" width={100} className={styles.image}/>
                 <p>React</p>
+              </div>
+              <div>
+                <img src={MATERIAL} alt="material-ui" width={100} className={styles.image}/>
+                <p>Material-UI</p>
               </div>
               <div>
                 <img src={REDUX} alt="redux" width={100} className={styles.image}/>
