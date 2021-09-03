@@ -34,12 +34,6 @@ export default function About() {
           en el año 2017.
         </p>
         <p>
-          Por temas economicos estuve 2 años sin programar trabajando en otras
-          areas vinculadas a informatica pero con la pandemia perdi mi trabajo y
-          aproveche para retomar lo que me apasiona y me enfoque a aprender
-          Javascript.
-        </p>
-        <p>
           A fines del 2020 conoci el bootcamp de{" "}
           <a
             href="https://www.soyhenry.com"
