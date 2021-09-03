@@ -39,7 +39,7 @@ export default function About() {
             href="https://www.soyhenry.com"
             target="_blank"
             className={styles.link}
-            without rel="noreferrer"
+            // without rel="noreferrer"
           >
             Soy Henry
           </a>{" "}
