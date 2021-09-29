@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Comfortaa','Segoe UI', 'Roboto', 'Oxygen',
@@ -5,11 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./img/fondo.jpg');
+  /* background-image: url('./img/fondo.jpg');
   -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 
 
 
@@ -19,3 +20,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

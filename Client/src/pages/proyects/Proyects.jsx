@@ -1,5 +1,6 @@
 import PSITESIS from "../../img/proyects/psitesis.png";
 import COUNTRIES from "../../img/proyects/countries.png"
+import WEATHER from "../../img/proyects/WeatherApp.png"
 import styles from './Proyects.module.css'
 export default function Proyects() {
   return (
@@ -40,6 +41,27 @@ export default function Proyects() {
             Repositorio:{" "}
             <a
               href="https://github.com/maksudxx/PI-Countries-FT14a/tree/master"
+              target="_blank" without rel="noreferrer"
+              className={styles.link}
+            >
+              GitHub
+            </a>{" "}
+          </p>
+        </li>
+
+        <li className={styles.proyect}>
+        <h5 className={styles.titleCard}><u>Weather APP</u></h5>
+          <img src={WEATHER} alt="psitesis" width={300} />
+          <p>
+            Link deploy:{" "}
+            <a href="https://weather-app-phi-wheat.vercel.app//" target="_blank" without rel="noreferrer" className={styles.link}>
+            weather-app-phi-wheat.vercel.app
+            </a>
+          </p>
+          <p>
+            Repositorio:{" "}
+            <a
+              href="https://github.com/maksudxx/WeatherApp"
               target="_blank" without rel="noreferrer"
               className={styles.link}
             >

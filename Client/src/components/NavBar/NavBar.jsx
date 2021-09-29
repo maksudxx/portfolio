@@ -1,44 +1,52 @@
-import { Link } from "react-router-dom";
-import styles from "./Navbar.module.css";
-import CV from '../../img/cv.jpg'
-
+import {FaBars} from "react-icons/fa";
+import CV from "../../img/cv.jpg";
+import {useState} from "react"
+import {
+  IconLogoMobile,
+  Menu,
+  MenuItem,
+  MenuItemLink,
+  MenuItemLink2,
+  NavbarContainer,
+  NavbarWrapper,
+} from "./Navbar.elements";
 
 export default function NavBar() {
+  const [click, setClick] = useState(false)
+
+  const changeClick = () => {
+    setClick(!click);
+    console.log(click);
+  }
+
   return (
-    <div className={styles.container}>
-      <nav className={`navbar navbar-expand-lg navbar-light ${styles.navbar}`}>
-        <div>
     
-          <ul class="navbar-nav">
-            
-            <li class="nav-item">
-              <Link to='/home' className={`nav-link ${styles.link}`}>
-                Sobre Mi
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/proyects" className={`nav-link ${styles.link}`}>
-                Proyectos
-              </Link>
-            </li>
-            <li class="nav-item">
-            <Link to='/contact' className={`nav-link ${styles.link}`}>
-                Contacto
-              </Link>
-            </li>
-            <li class="nav-item">
-              <a href={CV}  download={CV} className={`nav-link ${styles.link}`}>
-                Descargar CV
-              </a>
-            </li>
-            <li>
-              <Link to ='/' className={`nav-link ${styles.link}`}>
-                Salir
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+      <NavbarContainer>
+        <NavbarWrapper>
+          <IconLogoMobile onClick={()=> changeClick()}>
+            <FaBars/>
+          </IconLogoMobile>
+          <Menu click = {click}>
+            <MenuItem onClick={()=> changeClick()}>
+              <MenuItemLink to="/home">Sobre Mi</MenuItemLink>
+            </MenuItem>
+            <MenuItem onClick={()=> changeClick()}>
+              <MenuItemLink to="/proyects">Proyectos</MenuItemLink>
+            </MenuItem>
+            <MenuItem onClick={()=> changeClick()}>
+              <MenuItemLink to="/contact">Contacto</MenuItemLink>
+            </MenuItem>
+            <MenuItem onClick={()=> changeClick()}>
+                <MenuItemLink2 href={CV} download={CV}>
+                  Descargar CV
+                </MenuItemLink2>
+              </MenuItem >
+              <MenuItem onClick={()=> changeClick()}>
+              <MenuItemLink to="/">Salir</MenuItemLink>
+            </MenuItem>
+          </Menu>
+        </NavbarWrapper>
+      </NavbarContainer>
+    
   );
 }
