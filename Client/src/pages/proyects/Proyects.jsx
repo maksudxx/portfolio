@@ -51,10 +51,10 @@ export default function Proyects() {
 
         <li className={styles.proyect}>
         <h5 className={styles.titleCard}><u>Weather APP</u></h5>
-          <img src={WEATHER} alt="psitesis" className={styles.image} />
+          <img src={WEATHER} alt="weather" className={styles.image} />
           <p>
             Link deploy:{" "}
-            <a href="https://weather-app-phi-wheat.vercel.app//" target="_blank" without rel="noreferrer" className={styles.link}>
+            <a href="https://weather-app-one-ruby.vercel.app/" target="_blank" without rel="noreferrer" className={styles.link}>
             weather-app-phi-wheat.vercel.app
             </a>
           </p>
