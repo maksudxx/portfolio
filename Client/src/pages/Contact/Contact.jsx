@@ -21,11 +21,11 @@ export default function Contact() {
       <br />
       <form type="submit">
         <p>Dejar Mensaje: </p>
-        <input type="text" placeholder="Nombre completo..." className={styles.inputs} required="true" />
+        <input type="text" placeholder="Nombre completo..." className={styles.inputs} required={true} />
         <br />
         <input type="email" placeholder="Email..." className={styles.inputs}/>
         <br />
-        <textarea cols="40" rows="5" placeholder="Mensaje...." className={styles.inputs} required="true"/>
+        <textarea cols="40" rows="5" placeholder="Mensaje...." className={styles.inputs} required={true}/>
         <br />
         <input type="submit" className={styles.boton}/>
       </form>
