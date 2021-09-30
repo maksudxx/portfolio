@@ -77,7 +77,7 @@ export const IconLogoMobile = styled.div`
     display:none;
     @media(max-width: 768px){
         display:flex;
-        color: white;
+        color: white important!;
         font-size: 2rem
     }
 `;

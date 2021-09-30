@@ -4,17 +4,19 @@
 .title{
     margin-top: 150px;
     font-size: 8rem;
+    text-shadow: -3px 6px 12px #CE5937;
 }
 
 .boton{
-    color: rgb(0, 0, 0) !important;
+   color: white;
     border: 2px solid ;
     width: 120px;
-    height: 35px;
+    height: 45px;
     align-items: center;
     text-decoration: none;
     margin-top: 40px;
     border-radius: 5px;
+    background-color: #FF7F60
 
 }
 

@@ -23,5 +23,24 @@
     cursor: pointer;
 }
 .titleCard{
-    margin-top: 5px
+    margin-top: 5px;
+    color: black;
+}
+
+.image{
+    width: 300px;
+}
+
+@media(max-width:768px){
+    .proyectsGrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);  
+        gap: 20px; 
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .image{
+        width: 200px;
+    }
 }

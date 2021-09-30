@@ -27,7 +27,7 @@ export default function Contact() {
         <br />
         <textarea cols="40" rows="5" placeholder="Mensaje...." className={styles.inputs} required="true"/>
         <br />
-        <input type="submit" />
+        <input type="submit" className={styles.boton}/>
       </form>
     </div>
   );

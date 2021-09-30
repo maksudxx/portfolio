@@ -10,7 +10,7 @@ export default function Proyects() {
       <ul className={styles.proyectsGrid}>
         <li className={styles.proyect}>
         <h5 className={styles.titleCard}><u>Psitesis</u></h5>
-          <img src={PSITESIS} alt="psitesis" width={300} />
+          <img src={PSITESIS} alt="psitesis" className={styles.image} />
           <p>
             Link deploy:{" "}
             <a href="https://psitesis.netlify.app/" target="_blank" without rel="noreferrer" className={styles.link}>
@@ -30,7 +30,7 @@ export default function Proyects() {
         </li>
         <li className={styles.proyect}>
         <h5 className={styles.titleCard}><u>PI Countries</u></h5>
-          <img src={COUNTRIES} alt="countries" width={300} />
+          <img src={COUNTRIES} alt="countries" className={styles.image} />
           <p>
             Link deploy:{" "}
             <a href="https://psitesis.netlify.app/" target="_blank" without rel="noreferrer" className={styles.link}>
@@ -51,7 +51,7 @@ export default function Proyects() {
 
         <li className={styles.proyect}>
         <h5 className={styles.titleCard}><u>Weather APP</u></h5>
-          <img src={WEATHER} alt="psitesis" width={300} />
+          <img src={WEATHER} alt="psitesis" className={styles.image} />
           <p>
             Link deploy:{" "}
             <a href="https://weather-app-phi-wheat.vercel.app//" target="_blank" without rel="noreferrer" className={styles.link}>
