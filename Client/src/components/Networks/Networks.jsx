@@ -28,7 +28,7 @@ export  const Networks = React.memo(function RoundSocialLink() {
         />
         <SocialLink
           brand="Whatsapp"
-          href={'https://wa.me/3888603670/?text=Hola Facundo.!'}
+          href={'https://wa.me/+5493888603670/?text=Hola Facundo.!'}
           target="_blank"
           
         />
