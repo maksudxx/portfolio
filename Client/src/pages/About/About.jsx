@@ -25,7 +25,7 @@ export default function About() {
         <br />
         <p>
           Hola me llamo Facundo y soy un apasionado por el mundo IT, me gusta
-          la programación, como asi los videosjuegos y el futbol. Me considero una persona curiosa que me gusta
+          la programación, como asi los videojuegos y el Futbol. Me considero una persona curiosa que me gusta
           estar en constante aprendizaje
         </p>
         <p>
