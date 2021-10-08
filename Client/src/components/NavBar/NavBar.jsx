@@ -37,7 +37,7 @@ export default function NavBar() {
               <MenuItemLink to="/contact">Contacto</MenuItemLink>
             </MenuItem>
             <MenuItem onClick={()=> changeClick()}>
-                <MenuItemLink2 href={CV} download={CV}>
+                <MenuItemLink2 href={CV} download="CV Facundo Maksud">
                   Descargar CV
                 </MenuItemLink2>
               </MenuItem >

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
+
 export const NavbarContainer = styled.div`
     width: 100%;
     height:80px;
@@ -37,7 +38,7 @@ export const Menu = styled.ul`
         left: ${({click}) => (click ? 0 : "-100%")};
         flex-direction: column;
         transition : 0.5s all ease-in;
-        background-color: #8F857B
+        background-color: #6290E1
     }
 `;
 
@@ -78,6 +79,8 @@ export const IconLogoMobile = styled.div`
     @media(max-width: 768px){
         display:flex;
         color: white important!;
-        font-size: 2rem
+        font-size: 2rem;
+        color: white;
+        margin-left: 10px;
     }
 `;
