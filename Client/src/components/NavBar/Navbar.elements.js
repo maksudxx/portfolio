@@ -8,7 +8,7 @@ export const NavbarContainer = styled.div`
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: #FF7F60;
+    background-color: #000;
     border-bottom: 2px solid black
 
 `;
@@ -52,8 +52,9 @@ export const MenuItem = styled.li`
     font-weight:400;
 
     &:hover{
-        background-color: #AB5800;
-        border-bottom: 0.3rem solid #FF8E8E;
+        background-color: #FAFAFA;
+        font-color: #000;
+        border-bottom: 1rem solid #FFF;
         transition: 0.4s ease-in;
         cursor: pointer;
     }
@@ -78,7 +79,7 @@ export const IconLogoMobile = styled.div`
     display:none;
     @media(max-width: 768px){
         display:flex;
-        color: white important!;
+        font-color: white important!;
         font-size: 2rem;
         color: white;
         margin-left: 10px;
