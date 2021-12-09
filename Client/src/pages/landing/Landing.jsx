@@ -3,12 +3,12 @@ import styles from "./Landing.module.css";
 
 export default function LandingPage() {
   return (
-    <div className={styles.container} align="center">
+    <div className={styles.container}>
       <div className={styles.title}>
-        <h1>FACUNDO MAKSUD</h1>
-        <h3>FULL STACK DEVELOPER</h3>
+        <p className={styles.parrafo}>FACUNDO MAKSUD</p>
+        <p>FULL STACK DEVELOPER</p>
       </div>
-
+      <br />
       <Link to="/home" className={styles.link}>
         <button  className={styles.boton}>INICIO</button>
       </Link>
