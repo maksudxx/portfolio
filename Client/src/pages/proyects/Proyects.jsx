@@ -2,7 +2,9 @@ import PSITESIS from "../../img/proyects/psitesis.png";
 import COUNTRIES from "../../img/proyects/countries.png"
 import WEATHER from "../../img/proyects/WeatherApp.png"
 import styles from './Proyects.module.css'
+import proyects from '../../proyects.json'
 export default function Proyects() {
+  console.log(proyects)
   return (
     <div>
       <br /> <br /> 

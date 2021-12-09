@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "proyecto": "Countries APP",
+        "path_imagen": "https://mega.nz/file/vsNxHQTa#hu-UStMAkcfPJk3Iiq9_iMUR2a-Ey3awjGNh50bvQQ4",
+        "repositorio": "https://github.com/maksudxx/PI-Countries-FT14a",
+        "video": "https://www.linkedin.com/feed/update/urn:li:activity:6826718098545111041/",
+        "descripcion": "pagina de paises, los cuales los traigo desde una api. las funcionalidades de la misma son: Buscar paises por nombre, mostrar informacion detallada de un pais, filtrar continentes por actividad turistica, ordenar paises por nombre o por poblacion, crear actividades turisticas para los paises. Tecnologias utilizadas: Javascript, React, Redux, NodeJs, Express, PostgreSQL",
+        "deploy": ""
+    },
+
+    {
+        "id": 2,
+        "proyecto": "Psitesis",
+        "path_imagen": "https://mega.nz/file/ixtyFCDC#EzZVj3VeQLoeysWDohYxlt9VeBcaep7A2D1drUVHHII",
+        "repositorio": "https://github.com/martinnegro/Psitesis",
+        "video": "https://www.youtube.com/watch?v=3G32ebyDyv4",
+        "descripcion": "Aplicacion web destinada a ayudar a alumnos de Psicologia a realizar su tesis de graduacion. El sitio cuenta con un blog para contenido, foro como medio de comunicacion, perfiles de usuarios, notificaciones y panel de administrador. Toda la informacion se guarda dentro de una Base de datos",
+        "deploy": "https://psitesis.netlify.app/"
+    },
+    {
+        "id": 3,
+        "proyecto": "Wheater APP",
+        "path_imagen": "https://mega.nz/file/qxdiSDgY#gQ-aVkbmckOjR5EaeuIX8dJOjaUaGnASNAzTwDFt-h8",
+        "repositorio": "https://github.com/maksudxx/WeatherApp",
+        "video": "",
+        "descripcion": "SPA creada con React que muestra el clima de las ciudades que uno busca, esta es consumida desde una api y renderizada por el navegador",
+        "deploy": "https://weather-app-one-ruby.vercel.app/"
+    }
+
+   
+]
