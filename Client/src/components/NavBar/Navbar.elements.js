@@ -38,7 +38,7 @@ export const Menu = styled.ul`
         left: ${({click}) => (click ? 0 : "-100%")};
         flex-direction: column;
         transition : 0.5s all ease-in;
-        background-color: #6290E1
+        background-color: #BDBDBD
     }
 `;
 
