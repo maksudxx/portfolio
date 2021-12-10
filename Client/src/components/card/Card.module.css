@@ -1,0 +1,28 @@
+.link{
+    text-decoration: none;
+}
+
+.proyect{
+    list-style: none;
+    border: 3px solid black;
+    border-radius: 8px;
+    opacity: 0.75;
+    height: 250px;
+    color: black;
+    
+}
+.proyect:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.titleCard{
+    margin-top: 5px;
+    color: black;
+}
+
+.image{
+    height: 150px;
+    margin-bottom: 15px; 
+    border-radius:5px;
+
+}
