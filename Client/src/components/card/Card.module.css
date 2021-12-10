@@ -1,15 +1,21 @@
 .link{
     text-decoration: none;
 }
+.link:hover{
+    font-size: 1.1rem;
+}
 
 .proyect{
     list-style: none;
     border: 3px solid black;
     border-radius: 8px;
     opacity: 0.75;
-    height: 250px;
-    color: black;
-    
+    height: 500px;
+    color: black;    
+}
+.containerLinks{
+    display: flex;
+    justify-content: space-around;  
 }
 .proyect:hover{
     opacity: 1;
@@ -24,5 +30,9 @@
     height: 150px;
     margin-bottom: 15px; 
     border-radius:5px;
+}
 
+.description{
+    font-size: 0.8rem;
+    padding: 15px;
 }

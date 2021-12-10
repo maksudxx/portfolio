@@ -25,11 +25,14 @@
 .titleCard{
     margin-top: 5px;
     color: black;
+    margin-bottom: 15px;
 }
 
 .image{
     width: 300px;
 }
+
+
 
 @media(max-width:768px){
     .proyectsGrid{

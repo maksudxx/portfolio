@@ -17,7 +17,9 @@ export default function Proyects() {
               deploy={proyect.deploy}
               repositorio={proyect.repositorio}
               path_imagen={proyect.path_imagen}
+              descripcion={proyect.descripcion}
               id={proyect.id}
+              video={proyect.video}
             />
           ))
         }
