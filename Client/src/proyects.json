@@ -5,7 +5,7 @@
         "path_imagen": "https://hawkchill.com/wp-content/uploads/2019/11/flagsofworld2-1.jpg",
         "repositorio": "https://github.com/maksudxx/PI-Countries-FT14a",
         "video": "https://www.linkedin.com/feed/update/urn:li:activity:6826718098545111041/",
-        "descripcion": "pagina de paises, los cuales los traigo desde una api. las funcionalidades de la misma son: Buscar paises por nombre, mostrar informacion detallada de un pais, filtrar continentes por actividad turistica, ordenar paises por nombre o por poblacion, crear actividades turisticas para los paises. Tecnologias utilizadas: Javascript, React, Redux, NodeJs, Express, PostgreSQL",
+        "descripcion": "Pagina de paises, los cuales los traigo desde una api. las funcionalidades de la misma son: Buscar paises por nombre, mostrar informacion detallada de un pais, filtrar continentes por actividad turistica, ordenar paises por nombre o por poblacion, crear actividades turisticas para los paises. Tecnologias utilizadas: Javascript, React, Redux, NodeJs, Express, PostgreSQL",
         "deploy": ""
     },
 
