@@ -1,5 +1,5 @@
 import {FaBars} from "react-icons/fa";
-import CV from "../../img/cv.jpg";
+import CV from "../../img/cv.pdf";
 import {useState} from "react"
 import {
   IconLogoMobile,
