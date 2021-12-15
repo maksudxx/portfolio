@@ -21,7 +21,7 @@ export default function About() {
     <div align="center">
       <br /> <br /> 
       <div className={styles.parrafo}>
-        <h2><u>SOBRE MI</u></h2>
+        <h2 className={styles.title}>SOBRE MI</h2>
         <br />
         <p>
           Hola me llamo Facundo y soy un apasionado por el mundo IT, me gusta
@@ -55,48 +55,48 @@ export default function About() {
       <br />
       <br />
       <div>
-        <h3><u>Tecnologias y Herramientas</u></h3>
+        <h3 className={styles.title}>Tecnologias y Herramientas</h3>
         <br />
           <div className={styles.imagesGrid}>
               <div>
                 <img src={HTML} alt="html" width={100} className={styles.image}/>
-                <p>HTML</p>
+                <p className={styles.title}>HTML</p>
               </div>
               <div>
                 <img src={CSS} alt="css" width={100} className={styles.image}/>
-                <p>CSS</p>
+                <p className={styles.title}>CSS</p>
               </div>
               <div>
                 <img src={JAVASCRIPT} alt="javascript" width={100} className={styles.image}/>
-                <p>Javascript</p>
+                <p className={styles.title}>Javascript</p>
               </div>
               <div>
                 <img src={BOOTSTRAP} alt="bootstrap" width={100} className={styles.image}/>
-                <p>Bootstrap</p>
+                <p className={styles.title}>Bootstrap</p>
               </div>
               <div>
                 <img src={REACT} alt="react" width={100} className={styles.image}/>
-                <p>React</p>
+                <p className={styles.title}>React</p>
               </div>
               <div>
                 <img src={MATERIAL} alt="material-ui" width={100} className={styles.image}/>
-                <p>Material-UI</p>
+                <p className={styles.title}>Material-UI</p>
               </div>
               <div>
                 <img src={REDUX} alt="redux" width={100} className={styles.image}/>
-                <p>Redux</p>
+                <p className={styles.title}>Redux</p>
               </div>
               <div>
                 <img src={NODE} alt="node" width={180} className={styles.image}/>
-                <p>NodeJs</p>
+                <p className={styles.title}>NodeJs</p>
               </div>
               <div>
                 <img src={EXPRESS} alt="express" width={180} className={styles.image}/>
-                <p>Express</p>
+                <p className={styles.title}>Express</p>
               </div>
               <div>
                 <img src={SEQUELIZE} alt="sequelize" width={180} className={styles.image}/>
-                <p>Sequelize</p>
+                <p className={styles.title}> Sequelize</p>
               </div>
               <div>
                 <img src={POSTGRESQL} alt="postgresql" width={120} className={styles.image}/>
@@ -107,15 +107,15 @@ export default function About() {
               </div>
               <div>
                 <img src={POSTMAN} alt="postman" width={100} className={styles.image}/>
-                <p>Postman</p>
+                <p className={styles.title}>Postman</p>
               </div>
               <div>
                 <img src={NPM} alt="npm" width={100} className={styles.image}/>
-                <p>NPM</p>
+                <p className={styles.title}>NPM</p>
               </div>
               <div>
                 <img src={GITHUB} alt="github" width={100} className={styles.image}/>
-                <p>GitHub</p>
+                <p className={styles.title}>GitHub</p>
               </div>
           </div>
       </div>

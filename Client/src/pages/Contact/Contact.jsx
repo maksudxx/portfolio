@@ -34,22 +34,22 @@ export default function Contact() {
     <div>
       <br />
       <br />
-      <h2>
-        <u>CONTACTO</u>
+      <h2 className={styles.title}>
+        CONTACTO
       </h2>
       <br />
       <div>
-        <h5>
-          <u>Redes Sociales</u>
+        <h5 className={styles.title}>
+          Redes Sociales
         </h5>
-        <br />
         <Networks />
       </div>
-      <br />
-
+   
+    <br />
       {/* en el formulario la propiedad name de los input tienen que coincidir con los del template para que se envie el mje correctamente */}
       <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-        <p>Dejar Mensaje: </p>
+        <p className={styles.title}>Dejar Mensaje: </p>
+        
         <input
           type="text"
           placeholder="Nombre completo..."
@@ -84,9 +84,9 @@ export default function Contact() {
           autoComplete="off"
           maxLength='1500'
         />
-        <p>Caracteres restantes: {messageCharsLeft}</p>
+        <p className={styles.title}>Caracteres restantes: {messageCharsLeft}</p>
         <br />
-        <input type="submit" className={styles.boton} value="Send" />
+        <input type="submit" className={styles.boton} value="Enviar" />
         
       </form>
     </div>

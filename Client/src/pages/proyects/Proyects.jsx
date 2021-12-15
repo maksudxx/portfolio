@@ -7,7 +7,7 @@ export default function Proyects() {
   return (
     <div>
       <br /> <br /> 
-      <h2><u>PROYECTOS</u></h2>
+      <h2 className={styles.title}>PROYECTOS</h2>
       <ul className={styles.proyectsGrid}>
         {
           proyects.map((proyect, index) => (

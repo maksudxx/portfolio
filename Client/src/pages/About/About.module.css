@@ -9,6 +9,9 @@
 .link {
   text-decoration: none;
 }
+.title{
+  font-family: 'Russo One', sans-serif;
+}
 
 .imagesGrid {
   display: grid;
