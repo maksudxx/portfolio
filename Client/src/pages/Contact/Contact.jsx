@@ -1,7 +1,34 @@
 import { Networks } from "../../components/Networks/Networks";
-import styles from './Contact.module.css'
-export default function Contact() {
+import styles from "./Contact.module.css";
+import { useForm } from "react-hook-form";
+import React, { useState } from "react";
+import { init, sendForm } from "emailjs-com";
+init("user_6ycfs4IYOD5RxbBK55C6l");
 
+export default function Contact() {
+  const { register, handleSubmit, watch, errors } = useForm();
+  const [contactNumber, setContactNumber] = useState("000000");
+
+  const message = watch('message') || "";
+  const messageCharsLeft = 1500 - message.length;
+
+  const generateContactNumber = () => {
+    const numStr = "000000" + ((Math.random() * 1000000) | 0);
+    setContactNumber(numStr.substring(numStr.length - 6));
+  };
+  const onSubmit = (data) => {
+    //console.log(data);
+    generateContactNumber();
+    sendForm("default_service", "template_a7axzva", "#contact-form").then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+    alert("ok");
+  };
 
   return (
     <div>
@@ -19,15 +46,46 @@ export default function Contact() {
         <Networks />
       </div>
       <br />
-      <form type="submit">
+      <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <p>Dejar Mensaje: </p>
-        <input type="text" placeholder="Nombre completo..." className={styles.inputs} required={true} />
+        <input
+          type="text"
+          placeholder="Nombre completo..."
+          className={styles.inputs}
+          name="user_name"
+          maxLength="60"
+          autoComplete="off"
+          required={true}
+        />
         <br />
-        <input type="email" placeholder="Email..." className={styles.inputs}/>
+        <input type="hidden" name="contact_number" value={contactNumber} />
+        <input
+          type="email"
+          placeholder="Email..."
+          className={styles.inputs}
+          name="user_email"
+          maxLength="60"
+          autoComplete="off"
+          required={true}
+        />
         <br />
-        <textarea cols="40" rows="5" placeholder="Mensaje...." className={styles.inputs} required={true}/>
+        <textarea
+          cols="40"
+          rows="5"
+          placeholder="Mensaje...."
+          className={styles.inputs}
+          required={true}
+          name="message"
+          {...register("message", {
+            required: "Required",
+          })}
+          autoComplete="off"
+          maxLength='1500'
+        />
+        <p>Caracteres restantes: {messageCharsLeft}</p>
         <br />
-        <input type="submit" className={styles.boton}/>
+        <input type="submit" className={styles.boton} value="Send" />
+        
       </form>
     </div>
   );
