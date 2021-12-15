@@ -11,9 +11,11 @@ export default function Card({
 }) {
   return (
     <li className={styles.proyect}>
+      <br/>
       <h5 className={styles.titleCard}>
         <u>{proyecto}</u>
       </h5>
+      <br/>
       <img src={path_imagen} alt="images" className={styles.image} />
       <p className={styles.description}>{descripcion}</p>
       <p>LINKS</p>
