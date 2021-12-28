@@ -6,8 +6,9 @@ import { init, sendForm } from "emailjs-com";
 init("user_6ycfs4IYOD5RxbBK55C6l");  //id de usuario que provee mailJs
 
 export default function Contact() {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, watch} = useForm();
   const [contactNumber, setContactNumber] = useState("000000");
+ 
 
   const message = watch('message') || "";
   const messageCharsLeft = 1500 - message.length;
@@ -16,7 +17,7 @@ export default function Contact() {
     const numStr = "000000" + ((Math.random() * 1000000) | 0);
     setContactNumber(numStr.substring(numStr.length - 6));
   };
-  const onSubmit = (data) => {
+  const onSubmit = (data, e) => {
     //console.log(data);
     generateContactNumber(); 
     sendForm("default_service", "template_a7axzva", "#contact-form").then(  //agregamos el numero de template que se genera cuando lo creamos desde la pagina
@@ -27,7 +28,8 @@ export default function Contact() {
         console.log("FAILED...", error);
       }
     );
-    alert("ok");
+    alert("Enviado :)");
+    e.target.reset()
   };
 
   return (
@@ -57,7 +59,8 @@ export default function Contact() {
           name="user_name"
           maxLength="60"
           autoComplete="off"
-          required={true}
+          required="true"
+          
         />
         <br />
         <input type="hidden" name="contact_number" value={contactNumber} />
@@ -67,8 +70,7 @@ export default function Contact() {
           className={styles.inputs}
           name="user_email"
           maxLength="60"
-          autoComplete="off"
-          required={true}
+          required='true'
         />
         <br />
         <textarea
